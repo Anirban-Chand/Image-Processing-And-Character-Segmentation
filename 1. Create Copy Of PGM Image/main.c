@@ -96,6 +96,7 @@ int main(int argc, char* argv[]){
         fprintf(out, "\n");
     }
 
+    
     printf("*Image Data Copied From The File Successfully. :)\n");
 
     fclose(in);
