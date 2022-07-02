@@ -8,7 +8,7 @@
 * **Magic Number** - Magic numbers are the first few bytes of a file that are unique to a particular file type. These unique bits are referred to as magic numbers,  also sometimes referred to as a  file signature.
 These bytes can be used by the system to “differentiate between and recognize different files” without a file extension.
 
-* **Different Magic Numbers** --
+* **Different Magic Numbers**:
 
 | Magic Number   | File Type        | Extension | Type   |
 |:--------------:|------------------|-----------|--------|
@@ -25,10 +25,10 @@ These bytes can be used by the system to “differentiate between and recognize 
 	- 1. Average/Mean Filter
 	- 2. Median Filter
 		
-* **Mean Filter**	-	Superimpose the kernel on the image. Value at the center of the kernel is avg of the kernel.
+* **Mean Filter** -	Superimpose the kernel on the image. Value at the center of the kernel is avg of the kernel.
 	- Example: for 3x3 kernel - image[i][j] =(kernel[i-1][j-1]+kernel[i-1][j]+kernel[i-1][j+1]+kernel[i][j-1]+kernel[i][j]+kernel[i][j+1]+kernel[i+1][j-1]+kernel[i+1][j]+kernel[i+1][j+1])/9
 				
-* **Median Filter**	-	Superimpose the kernel on the image. Value at center of kernel is median of the kernel. We sort kernel elements & take median of them.
+* **Median Filter** -	Superimpose the kernel on the image. Value at center of kernel is median of the kernel. We sort kernel elements & take median of them.
 	- Example: image[i][j] = median(kernel[i-1][j-1], kernel[i-1][j], kernel[i-1][j+1], kernel[i][j-1], kernel[i][j], kernel[i][j+1], kernel[i+1][j-1], kernel[i+1][j], kernel[i+1][j+1])
 				
 				
